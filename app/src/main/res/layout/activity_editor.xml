@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditorActivity"
+    android:focusableInTouchMode="true">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+            <TextView
+                style="@style/textViews"
+                android:text="@string/name"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/textColors"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginRight="16dp">
+                    <TextView
+                        style="@style/textViews"
+                        android:text="Price" />
+
+                    <EditText
+                        android:id="@+id/price"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:backgroundTint="@color/textColors"
+                        android:inputType="number"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="16dp">
+                    <TextView
+                        style="@style/textViews"
+                        android:text="Type"/>
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+
+                        <Spinner
+                            android:layout_gravity="left"
+                            android:id="@+id/spinner_type"
+                            android:layout_height="48dp"
+                            android:layout_width="wrap_content"
+                            android:paddingRight="16dp"
+                            android:spinnerMode="dropdown"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/textViews"
+                android:text="Quantity"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/decreaseQuantity"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@mipmap/ic_decrease"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+                <EditText
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/textColors"
+                    android:textSize="16sp"
+                    android:inputType="number"
+                    android:text="0"
+                    android:background="@android:color/transparent"/>
+                <ImageView
+                    android:id="@+id/increaseQuantity"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@mipmap/ic_increase"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/textViews"
+                android:text="Supplier Name"/>
+            <EditText
+                android:id="@+id/supplierName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/textColors"
+                android:textSize="16sp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "/>
+
+            <TextView
+                style="@style/textViews"
+                android:text="Supplier Phone"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/supplierPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:backgroundTint="@color/textColors"
+                    android:textSize="16sp"
+                    android:inputType="phone"
+                    android:gravity="bottom"/>
+                <ImageView
+                    android:id="@+id/phoneCall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@mipmap/ic_phone"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

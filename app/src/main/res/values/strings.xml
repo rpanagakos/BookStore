@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BookStore</string>
+    <string name="name">Name</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="fiction">Fiction</string>
+    <string name="non_fiction">Non-Fiction</string>
+    <string name="the_library_is_empty">The Library is empty</string>
+    <string name="get_started_by_adding_a_book">Get started by adding a book</string>
+    <!-- Toast message in editor when new pet has been successfully inserted [CHAR LIMIT=NONE] -->
+    <string name="editor_insert_pet_successful">Pet saved</string>
+
+    <!-- Toast message in editor when new pet has failed to be inserted [CHAR LIMIT=NONE] -->
+    <string name="editor_insert_pet_failed">Error with saving pet</string>
+    <string name="unknown">Unknown</string>
+
+</resources>
